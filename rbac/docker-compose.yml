@@ -307,17 +307,17 @@ services:
         # Allow overriding configs on the connector level
         CONNECT_CONNECTOR_CLIENT_CONFIG_OVERRIDE_POLICY: 'All'
         # Default producer configs
-        CONNECT_PRODUCER_SECURITY_PROTOCOL: 'SASL_PLAINTEXT'
-        CONNECT_PRODUCER_SASL_MECHANISM: 'OAUTHBEARER'
-        CONNECT_PRODUCER_SASL_LOGIN_CALLBACK_HANDLER_CLASS: 'io.confluent.kafka.clients.plugins.auth.token.TokenUserLoginCallbackHandler'
+        # CONNECT_PRODUCER_SECURITY_PROTOCOL: 'SASL_PLAINTEXT'
+        # CONNECT_PRODUCER_SASL_MECHANISM: 'OAUTHBEARER'
+        # CONNECT_PRODUCER_SASL_LOGIN_CALLBACK_HANDLER_CLASS: 'io.confluent.kafka.clients.plugins.auth.token.TokenUserLoginCallbackHandler'
         # Default consumer configs
-        CONNECT_CONSUMER_SECURITY_PROTOCOL: 'SASL_PLAINTEXT'
-        CONNECT_CONSUMER_SASL_MECHANISM: 'OAUTHBEARER'
-        CONNECT_CONSUMER_SASL_LOGIN_CALLBACK_HANDLER_CLASS: 'io.confluent.kafka.clients.plugins.auth.token.TokenUserLoginCallbackHandler'
+        # CONNECT_CONSUMER_SECURITY_PROTOCOL: 'SASL_PLAINTEXT'
+        # CONNECT_CONSUMER_SASL_MECHANISM: 'OAUTHBEARER'
+        # CONNECT_CONSUMER_SASL_LOGIN_CALLBACK_HANDLER_CLASS: 'io.confluent.kafka.clients.plugins.auth.token.TokenUserLoginCallbackHandler'
         # Default admin config
-        CONNECT_ADMIN_SECURITY_PROTOCOL: 'SASL_PLAINTEXT'
-        CONNECT_ADMIN_SASL_MECHANISM: 'OAUTHBEARER'
-        CONNECT_ADMIN_SASL_LOGIN_CALLBACK_HANDLER_CLASS: 'io.confluent.kafka.clients.plugins.auth.token.TokenUserLoginCallbackHandler'
+        # CONNECT_ADMIN_SECURITY_PROTOCOL: 'SASL_PLAINTEXT'
+        # CONNECT_ADMIN_SASL_MECHANISM: 'OAUTHBEARER'
+        # CONNECT_ADMIN_SASL_LOGIN_CALLBACK_HANDLER_CLASS: 'io.confluent.kafka.clients.plugins.auth.token.TokenUserLoginCallbackHandler'
         # Load confluent plugins
         CONNECT_PLUGIN_PATH: "/usr/share/java,/usr/share/confluent-hub-components"
         # ============================== RBAC ========================================
