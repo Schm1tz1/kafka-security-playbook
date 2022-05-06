@@ -17,7 +17,7 @@ kafka-console-consumer --bootstrap-server kafka:9093 --consumer.config /etc/kafk
 
 ### Important configuration files
 <details>
-<summary><a href="plain/kafka/server.properties">kafka server.properties</a></summary>,
+<summary><a href="plain/kafka/server.properties">kafka server.properties</a></summary>
 <pre>
 sasl.enabled.mechanisms=PLAIN
 sasl.mechanism.inter.broker.protocol=PLAIN
@@ -28,7 +28,7 @@ authorizer.class.name=kafka.security.auth.SimpleAclAuthorizer
 </details>
 
 <details>
-<summary><a href="plain/kafka/consumer.properties">kafka consumer and producer configuration</a></summary>
+<summary><a href="plain/consumer.properties">kafka consumer and producer configuration</a></summary>
 <pre>
 sasl.mechanism=PLAIN
 security.protocol=SASL_PLAINTEXT
@@ -72,7 +72,7 @@ docker-compose exec kafka kafka-console-consumer --bootstrap-server kafka:9093 -
 
 ### Important configuration files
 <details>
-<summary><a href="scram/kafka/server.properties">kafka server.properties</a></summary>
+<summary><a href="plain/kafka/server.properties">kafka server.properties</a></summary>
 <pre>
 sasl.enabled.mechanisms=SCRAM-SHA-256
 sasl.mechanism.inter.broker.protocol=SCRAM-SHA-256
@@ -82,7 +82,7 @@ authorizer.class.name=kafka.security.auth.SimpleAclAuthorizer
 </details>
 
 <details>
-<summary><a href="scram/kafka/consumer.properties">kafka consumer and producer configuration</a></summary>
+<summary><a href="scram/consumer.properties">kafka consumer and producer configuration</a></summary>
 <pre>
 sasl.mechanism=SCRAM-SHA-256
 security.protocol=SASL_PLAINTEXT
@@ -93,7 +93,7 @@ sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule require
 </details>
 
 <details>
-<summary><a href="scram/kafka/kafka.sasl.jaas.config">kafka server jaas configuration</a></summary>
+<summary><a href="scram/kafka.sasl.jaas.config">kafka server jaas configuration</a></summary>
 <pre>
 KafkaServer {
    org.apache.kafka.common.security.scram.ScramLoginModule required
@@ -270,7 +270,7 @@ Client {
 </pre>
 </details>
 <details>
-	<summary><a href="kerberos/kafka/consumer.properties">kafka consumer and producer configuration</a></summary>
+	<summary><a href="kerberos/client/consumer.properties">kafka consumer and producer configuration</a></summary>
 <pre>
 bootstrap.servers=kafka:9093
 security.protocol=SASL_PLAINTEXT
